@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: lang-servers-java
-          image: indosaram/lang-servers-java:latest
+          image: mukmookk/lang-servers-java:latest
           imagePullPolicy: "Always"
           ports:
             - containerPort: 9003

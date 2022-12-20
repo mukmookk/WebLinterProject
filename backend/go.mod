@@ -1,4 +1,4 @@
-module github.com/Indosaram/gomunkong-backend
+module github.com/mukmookk/webLinterProject/backend
 
 go 1.19
 

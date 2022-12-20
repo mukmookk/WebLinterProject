@@ -1,8 +1,8 @@
-# Gomunkong
+# webLinterProject
 
 Online Code Formatter.
 
-[Demo on Okteto Cloud](https://gomunkong-frontend-ingress-indosaram.cloud.okteto.net/)
+[Demo on Okteto Cloud](https://webLinterProject-frontend-ingress-indosaram.cloud.okteto.net/)
 
 
 
@@ -37,15 +37,11 @@ A frontend and a backend are working on Kubernetes.
 
 ### Frontend
 
-[Repository](https://github.com/Indosaram/gomunkong-frontend)
-
 The frontend is made by `create-react-app` . 
 
 
 
 ### Backend
-
-[Repository](https://github.com/Indosaram/gomunkong-backend)
 
 Pure Golang backend, with gRPC and gin-go.
 
@@ -63,7 +59,7 @@ minikube addons enable ingress
 Now, apply k8s definitions.
 
 ```bash
-# gomunkong-main
+# webLinterProject-main
 bash deploy_k8s.sh
 ```
 

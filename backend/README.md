@@ -1,6 +1,6 @@
-# gomunkong-backend
+# webLinterProject-backend
 
-A backend repository for `gomunkong` project, written in Golang.
+A backend repository for `webLinterProject` project, written in Golang.
 
 
 

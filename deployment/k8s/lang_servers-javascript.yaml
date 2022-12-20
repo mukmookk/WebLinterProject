@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: lang-servers-javascript
-          image: indosaram/lang-servers-javascript:latest
+          image: mukmookk/lang-servers-javascript:latest
           imagePullPolicy: "Always"
           ports:
             - containerPort: 9002

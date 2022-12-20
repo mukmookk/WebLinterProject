@@ -6,9 +6,9 @@ import (
 	"io/ioutil"
 	"net"
 
-	formatter "github.com/Indosaram/gomunkong-backend/formatter/file_io"
-	"github.com/Indosaram/gomunkong-backend/language_servers/server_setting"
-	langPb "github.com/Indosaram/gomunkong-backend/proto/lang_server"
+	formatter "github.com/mukmookk/webLinterProject/backend/formatter/file_io"
+	"github.com/mukmookk/webLinterProject/backend/language_servers/server_setting"
+	langPb "github.com/mukmookk/webLinterProject/backend/proto/lang_server"
 	"google.golang.org/grpc"
 )
 

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: lang-servers-python
-          image: indosaram/lang-servers-python:latest
+          image: mukmookk/lang-servers-python:latest
           imagePullPolicy: "Always"
           ports:
             - containerPort: 9001

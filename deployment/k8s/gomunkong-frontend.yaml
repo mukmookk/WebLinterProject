@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gomunkong-frontend-deployment
+  name: webLinterProject-frontend-deployment
   labels:
-    app: gomunkong-frontend
+    app: webLinterProject-frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gomunkong-frontend
+      app: webLinterProject-frontend
   template:
     metadata:
       labels:
-        app: gomunkong-frontend
+        app: webLinterProject-frontend
     spec:
       containers:
-        - name: gomunkong-frontend
-          image: indosaram/gomunkong-frontend:latest
+        - name: webLinterProject-frontend
+          image: mukmookk/webLinterProject-frontend:latest
           imagePullPolicy: "Always"
           ports:
             - containerPort: 80
@@ -24,10 +24,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: gomunkong-frontend-service
+  name: webLinterProject-frontend-service
 spec:
   selector:
-    app: gomunkong-frontend
+    app: webLinterProject-frontend
   ports:
     - protocol: TCP
       port: 80
@@ -37,7 +37,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: gomunkong-frontend-ingress
+  name: webLinterProject-frontend-ingress
   annotations:
     dev.okteto.com/generate-host: "true"
 spec:
@@ -48,7 +48,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: gomunkong-frontend-service
+                name: webLinterProject-frontend-service
                 port:
                   number: 80
           - path: /api
@@ -62,12 +62,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: gomunkong-frontend-ingress-service
+  name: webLinterProject-frontend-ingress-service
 spec:
   ports:
     - name: service
       port: 80
       targetPort: 80
   selector:
-    app.kubernetes.io/component: gomunkong-frontend-ingress
-    app.kubernetes.io/part-of: gomunkong-frontend-ingress
+    app.kubernetes.io/component: webLinterProject-frontend-ingress
+    app.kubernetes.io/part-of: webLinterProject-frontend-ingress

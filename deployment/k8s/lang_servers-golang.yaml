@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: lang-servers-golang
-          image: indosaram/lang-servers-golang:latest
+          image: mukmookk/lang-servers-golang:latest
           imagePullPolicy: "Always"
           ports:
             - containerPort: 9005

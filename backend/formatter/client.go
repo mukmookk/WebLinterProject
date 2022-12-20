@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	langPb "github.com/Indosaram/gomunkong-backend/proto/lang_server"
+	langPb "github.com/mukmookk/webLinterProject/backend/proto/lang_server"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

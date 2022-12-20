@@ -2,7 +2,7 @@ syntax="proto3";
 
 package lang_server;
 
-option go_package = "github.com/Indosaram/gomunkong/gomunkong-backend/proto/lang_server";
+option go_package = "github.com/Indosaram/webLinterProject/webLinterProject-backend/proto/lang_server";
 
 service Lang {
     rpc Formatter(Input) returns (FormattedCode);

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: formatter
-          image: indosaram/formatter:latest
+          image: mukmookk/formatter:latest
           imagePullPolicy: "Always"
           ports:
             - containerPort: 8080
