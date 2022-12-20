@@ -1,8 +1,8 @@
-# webLinterProject
+# WebLinterProject
 
 Online Code Formatter.
 
-[Demo on Okteto Cloud](https://webLinterProject-frontend-ingress-indosaram.cloud.okteto.net/)
+[Demo on Okteto Cloud](https://WebLinterProject-frontend-ingress-indosaram.cloud.okteto.net/)
 
 
 
@@ -59,7 +59,7 @@ minikube addons enable ingress
 Now, apply k8s definitions.
 
 ```bash
-# webLinterProject-main
+# WebLinterProject-main
 bash deploy_k8s.sh
 ```
 

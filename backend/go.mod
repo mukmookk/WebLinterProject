@@ -1,4 +1,4 @@
-module github.com/mukmookk/webLinterProject/backend
+module github.com/mukmookk/WebLinterProject/backend
 
 go 1.19
 

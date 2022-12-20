@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webLinterProject-frontend-deployment
+  name: WebLinterProject-frontend-deployment
   labels:
-    app: webLinterProject-frontend
+    app: WebLinterProject-frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webLinterProject-frontend
+      app: WebLinterProject-frontend
   template:
     metadata:
       labels:
-        app: webLinterProject-frontend
+        app: WebLinterProject-frontend
     spec:
       containers:
-        - name: webLinterProject-frontend
-          image: mukmookk/webLinterProject-frontend:latest
+        - name: WebLinterProject-frontend
+          image: mukmookk/WebLinterProject-frontend:latest
           imagePullPolicy: "Always"
           ports:
             - containerPort: 80
@@ -24,10 +24,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webLinterProject-frontend-service
+  name: WebLinterProject-frontend-service
 spec:
   selector:
-    app: webLinterProject-frontend
+    app: WebLinterProject-frontend
   ports:
     - protocol: TCP
       port: 80
@@ -37,7 +37,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: webLinterProject-frontend-ingress
+  name: WebLinterProject-frontend-ingress
   annotations:
     dev.okteto.com/generate-host: "true"
 spec:
@@ -48,7 +48,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: webLinterProject-frontend-service
+                name: WebLinterProject-frontend-service
                 port:
                   number: 80
           - path: /api
@@ -62,12 +62,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webLinterProject-frontend-ingress-service
+  name: WebLinterProject-frontend-ingress-service
 spec:
   ports:
     - name: service
       port: 80
       targetPort: 80
   selector:
-    app.kubernetes.io/component: webLinterProject-frontend-ingress
-    app.kubernetes.io/part-of: webLinterProject-frontend-ingress
+    app.kubernetes.io/component: WebLinterProject-frontend-ingress
+    app.kubernetes.io/part-of: WebLinterProject-frontend-ingress

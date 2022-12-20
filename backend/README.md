@@ -1,6 +1,6 @@
-# webLinterProject-backend
+# WebLinterProject-backend
 
-A backend repository for `webLinterProject` project, written in Golang.
+A backend repository for `WebLinterProject` project, written in Golang.
 
 
 
