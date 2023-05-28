@@ -37,15 +37,11 @@ A frontend and a backend are working on Kubernetes.
 
 ### Frontend
 
-[Repository](https://github.com/Indosaram/gomunkong-frontend)
-
 The frontend is made by `create-react-app` . 
 
 
 
 ### Backend
-
-[Repository](https://github.com/Indosaram/gomunkong-backend)
 
 Pure Golang backend, with gRPC and gin-go.
 
