@@ -2,9 +2,6 @@
 
 Online Code Formatter.
 
-[Demo on Okteto Cloud](https://WebLinterProject-frontend-ingress-indosaram.cloud.okteto.net/)
-
-
 
 ## Language support
 
@@ -22,15 +19,6 @@ For now, four languages are available with their formatters.
 - Java
   - google-java-format
 
-The following will be supported shortly.
-
-- Swift
-- C-like languages
-- HTML
-- CSS
-
-
-
 ## How it works
 
 A frontend and a backend are working on Kubernetes.
@@ -39,13 +27,9 @@ A frontend and a backend are working on Kubernetes.
 
 The frontend is made by `create-react-app` . 
 
-
-
 ### Backend
 
 Pure Golang backend, with gRPC and gin-go.
-
-
 
 ### Deployment
 
