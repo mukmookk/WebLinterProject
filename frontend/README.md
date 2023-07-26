@@ -1,3 +1,3 @@
-# WebLinterProject - 검은콩
+# WebLinterProject
 
 Online code formatter
