@@ -20,8 +20,6 @@ Code formatter main API server.
 
 Python, Go, Java, Javascript formatter servers.
 
-**
-
 ### Proto
 
 protobuf definitions for gRPC communication between containers.
